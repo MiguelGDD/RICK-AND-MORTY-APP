@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="userlist"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <div *ngIf="characters">
+          <ion-card>
+            <ion-card-content class="ion-text-center">
+              <ion-card-header>
+                <img class=""  src="{{characters.image}}" alt="{{characters.name}}" />
+                <ion-card-title>{{characters.name}}</ion-card-title>
+                <ion-card-subtitle>species: {{characters.species}}</ion-card-subtitle>
+                <ion-card-subtitle>gender: {{characters.gender}}</ion-card-subtitle>
+                <ion-card-subtitle>status: {{characters.status}}</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

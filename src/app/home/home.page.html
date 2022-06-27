@@ -1,20 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <img class="" src="" alt="" />
+    <ion-title> Rick and Morty APP </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Rick and Morty APP</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-list-header>Sections</ion-list-header>
+      <ion-item [routerLink]="['/userlist']"
+      routerLinkActive="router-link-active">
+        <ion-label>Characters</ion-label>
+        <ion-badge color="success" slot="end">826</ion-badge>
+      </ion-item>
+      
+    </ion-list>
+  </ion-content>
 </ion-content>
